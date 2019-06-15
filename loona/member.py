@@ -1,4 +1,5 @@
 import datetime
+import math
 
 
 class Member:
@@ -18,12 +19,16 @@ class Member:
         self.song_url = kwargs.get('song_url')
         self.subunit = kwargs.get('subunit')
         self.location = kwargs.get('location')
+        self.debut = kwargs.get('debut')
 
     def stream(self):
         print(self.song_url)
 
     def age(self):
-        return (datetime.date.today() - self.birthday).days/365.2425
+        return math.floor((datetime.date.today() - self.birthday).days/365.2425)
+
+    def DaysSinceDebut(self):
+        return (datetime.date.today() - self.debut).days
 
 
 class Heejin(Member):
@@ -41,7 +46,8 @@ class Heejin(Member):
                         song="ViViD",
                         song_url="https://www.youtube.com/watch?v=-FCYE87P5L0",
                         subunit="1/3",
-                        location="Paris, France"
+                        location="Paris, France",
+                        debut=datetime.date(2016, 9, 25)
                         )
 
 
@@ -60,7 +66,8 @@ class Hyunjin(Member):
                         song="Around You",
                         song_url="https://www.youtube.com/watch?v=mybsDDymrsc",
                         subunit="1/3",
-                        location="Tokyo, Japan"
+                        location="Tokyo, Japan",
+                        debut=datetime.date(2016, 10, 28)
                         )
 
 
@@ -79,7 +86,8 @@ class Haseul(Member):
                         song="Let Me In",
                         song_url="https://www.youtube.com/watch?v=6a4BWpBJppI",
                         subunit="1/3",
-                        location="Iceland & London, England"
+                        location="Iceland & London, England",
+                        debut=datetime.date(2016, 12, 8)
                         )
 
 
@@ -97,7 +105,8 @@ class Yeojin(Member):
                         animal="Frog",
                         song="Kiss Later",
                         song_url="https://www.youtube.com/watch?v=thpTOAS1Vgg",
-                        location="Taipei, Taiwan"
+                        location="Taipei, Taiwan",
+                        debut=datetime.date(2017, 1, 4)
                         )
 
 
@@ -116,7 +125,8 @@ class Vivi(Member):
                         song="Everyday I Love You",
                         song_url="https://www.youtube.com/watch?v=ZNcBZM5SvbY",
                         subunit="1/3",
-                        location="Busan, South Korea"
+                        location="Busan, South Korea",
+                        debut=datetime.date(2017, 2, 13)
                         )
         self.birthname_ch = "黃珈熙"
 
@@ -136,6 +146,7 @@ class KimLip(Member):
                         song="Eclipse",
                         song_url="https://www.youtube.com/watch?v=_qJEoSa3Ie0",
                         subunit="Odd Eye Circle",
+                        debut=datetime.date(2017, 5, 15)
                         )
 
 
@@ -153,7 +164,8 @@ class Jinsoul(Member):
                         animal="Blue Betta",
                         song="Singing in the Rain",
                         song_url="https://www.youtube.com/watch?v=RWeyOyY_puQ",
-                        subunit="Odd Eye Circle"
+                        subunit="Odd Eye Circle",
+                        debut=datetime.date(2017, 6, 13)
                         )
 
 
@@ -172,7 +184,8 @@ class Choerry(Member):
                         fruit="Cherry",
                         song="Love Cherry Motion",
                         song_url="https://www.youtube.com/watch?v=VBbeuXW8Nko",
-                        subunit="Odd Eye Circle"
+                        subunit="Odd Eye Circle",
+                        debut=datetime.date(2017, 7, 12)
                         )
 
 
@@ -191,7 +204,8 @@ class Yves(Member):
                         fruit="Apple",
                         song="new",
                         song_url="https://www.youtube.com/watch?v=LIDe-yTxda0",
-                        subunit="YYXY"
+                        subunit="YYXY",
+                        debut=datetime.date(2017, 11, 14)
                         )
 
 
@@ -210,7 +224,8 @@ class Chuu(Member):
                         fruit="Strawberry",
                         song="Heart Attack",
                         song_url="https://www.youtube.com/watch?v=BVVfMFS3mgc",
-                        subunit="YYXY"
+                        subunit="YYXY",
+                        debut=datetime.date(2017, 12, 14)
                         )
 
 
@@ -229,7 +244,8 @@ class Gowon(Member):
                         fruit="Pineapple",
                         song="One&Only",
                         song_url="https://www.youtube.com/watch?v=m5qwcYL8a0o",
-                        subunit="YYXY"
+                        subunit="YYXY",
+                        debut=datetime.date(2018, 1, 15)
                         )
 
 
@@ -248,7 +264,8 @@ class Olivia(Member):
                         fruit="Blood Plum",
                         song="Egoist",
                         song_url="https://www.youtube.com/watch?v=UkY8HvgvBJ8",
-                        subunit="YYXY"
+                        subunit="YYXY",
+                        debut=datetime.date(2018, 3, 17)
                         )
 
     def roll(self):
