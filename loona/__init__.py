@@ -14,31 +14,48 @@ chuu = loona.member.Chuu()
 gowon = loona.member.Gowon()
 olivia = loona.member.Olivia()
 
+group = loona.subunit.LOONA()
+group.add_leader(haseul)
+group.add_leader(kimlip)
+group.add_leader(yves)
+group.add_member(heejin)
+group.add_member(haseul)
+group.add_member(hyunjin)
+group.add_member(vivi)
+group.add_member(kimlip)
+group.add_member(jinsoul)
+group.add_member(choerry)
+group.add_member(chuu)
+group.add_member(gowon)
+group.add_member(olivia)
+
 
 def get_members():
-    return [heejin, hyunjin, haseul, yeojin, vivi, kimlip, jinsoul, choerry, yves, chuu, gowon, olivia]
+    return group.members
 
 
 onethird = loona.subunit.OneThird()
-onethird.leader = haseul
-onethird.members = [heejin, haseul, hyunjin, vivi]
+onethird.add_leader(haseul)
+onethird.add_member(heejin)
+onethird.add_member(haseul)
+onethird.add_member(hyunjin)
+onethird.add_member(vivi)
 
 oddeyecircle = loona.subunit.OddEyeCircle()
-oddeyecircle.leader = kimlip
-oddeyecircle.members = [kimlip, jinsoul, choerry]
+oddeyecircle.add_leader(kimlip)
+oddeyecircle.add_member(kimlip)
+oddeyecircle.add_member(jinsoul)
+oddeyecircle.add_member(choerry)
 
 yyxy = loona.subunit.YYXY()
-yyxy.leader = yves
-yyxy.members = [yves, chuu, gowon, olivia]
+yyxy.add_leader(yves)
+yyxy.add_member(chuu)
+yyxy.add_member(gowon)
+yyxy.add_member(olivia)
 
 
 def get_subunits():
     return [onethird, oddeyecircle, yyxy]
-
-
-group = loona.subunit.LOONA()
-group.leader = [haseul, kimlip, yves]
-group.members = [heejin, hyunjin, haseul, yeojin, vivi, kimlip, jinsoul, choerry, yves, chuu, gowon, olivia]
 
 
 if __name__ == "__main__":
