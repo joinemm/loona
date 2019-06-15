@@ -22,7 +22,7 @@ def get_members():
 
 onethird = loona.subunit.OneThird()
 oddeyecircle = loona.subunit.OddEyeCircle()
-yyxy = loona.subunit.yyxy()
+yyxy = loona.subunit.YYXY()
 
 
 def get_subunits():
