@@ -1,6 +1,5 @@
 import loona.member
 import loona.subunit
-import loona.group
 
 heejin = loona.member.Heejin()
 hyunjin = loona.member.Hyunjin()
@@ -37,7 +36,9 @@ def get_subunits():
     return [onethird, oddeyecircle, yyxy]
 
 
-fullgroup = loona.group.LOONA()
+group = loona.subunit.LOONA()
+group.leader = [haseul, kimlip, yves]
+group.members = [heejin, hyunjin, haseul, yeojin, vivi, kimlip, jinsoul, choerry, yves, chuu, gowon, olivia]
 
 
 if __name__ == "__main__":
