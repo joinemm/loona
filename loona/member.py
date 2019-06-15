@@ -1,5 +1,4 @@
 import datetime
-import math
 
 
 class Member:
@@ -25,7 +24,7 @@ class Member:
         print(self.song_url)
 
     def age(self):
-        return math.floor((datetime.date.today() - self.birthday).days/365.2425)
+        return int((datetime.date.today() - self.birthday).days/365.2425)
 
     def days_since_debut(self):
         return (datetime.date.today() - self.debut).days
