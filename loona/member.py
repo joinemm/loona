@@ -20,6 +20,9 @@ class Member:
         self.location = kwargs.get('location')
         self.debut = kwargs.get('debut')
 
+    def __str__(self):
+        return self.name
+
     def stream(self):
         print(self.song_url)
 

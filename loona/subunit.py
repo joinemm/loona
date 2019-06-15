@@ -11,6 +11,9 @@ class SubUnit:
         self.members = kwargs.get('members')
         self.releases = kwargs.get('releases')
 
+    def __str__(self):
+        return self.name
+
     def days_since_debut(self):
         return(datetime.date.today() - self.debut).days
 
