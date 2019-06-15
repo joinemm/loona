@@ -21,8 +21,16 @@ def get_members():
 
 
 onethird = loona.subunit.OneThird()
+onethird.leader = haseul
+onethird.members = [heejin, haseul, hyunjin, vivi]
+
 oddeyecircle = loona.subunit.OddEyeCircle()
+oddeyecircle.leader = kimlip
+oddeyecircle.members = [kimlip, jinsoul, choerry]
+
 yyxy = loona.subunit.YYXY()
+yyxy.leader = yves
+yyxy.members = [yves, chuu, gowon, olivia]
 
 
 def get_subunits():
