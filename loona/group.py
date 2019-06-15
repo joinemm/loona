@@ -19,19 +19,21 @@ class Group:
                 Its twelve members were revealed in a periodic fashion, corresponding to their Korean 
                 name Idarui Sonyeo (이달의 소녀), which translates to "Girl of the Month"."""
     
-    def DaysSinceDebut(self):
+    def days_since_debut(self):
         return(datetime.date.today() - self.debut).days
+
 
 class LOONA(Group):
     
     def __init__(self):
         Group.__init__(self, "LOONA",
-                        name_kr="이달의 소녀",
-                        name_zh='本月少女',
-                        name_ja='今月の少女',
-                        debut=datetime.date(2018, 8, 20),
-                        leaders='Haseul, Kim Lip, Yves',
-                        members='Heejin, Hyunjin, Haseul, Yeojin, ViVi, Kim Lip, Jinsoul, Choerry, Yves, Chuu, Go Won, Olivia Hye',
-                        releases='favOriTe (2018), [+ +] (2018), Orbit 1.0 (2018), [x x] (2019)',
-                        concerts='LOONAbirth (2018), LOONAVERSE (2019)'
+                       name_kr="이달의 소녀",
+                       name_zh='本月少女',
+                       name_ja='今月の少女',
+                       debut=datetime.date(2018, 8, 20),
+                       leaders='Haseul, Kim Lip, Yves',
+                       members='Heejin, Hyunjin, Haseul, Yeojin, ViVi, Kim Lip, '
+                               'Jinsoul, Choerry, Yves, Chuu, Go Won, Olivia Hye',
+                       releases='favOriTe (2018), [+ +] (2018), Orbit 1.0 (2018), [x x] (2019)',
+                       concerts='LOONAbirth (2018), LOONAVERSE (2019)'
                         )

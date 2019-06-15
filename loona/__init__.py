@@ -19,14 +19,17 @@ olivia = loona.member.Olivia()
 def get_members():
     return [heejin, hyunjin, haseul, yeojin, vivi, kimlip, jinsoul, choerry, yves, chuu, gowon, olivia]
 
-OneThird = loona.subunit.OneThird()
-OddEyeCircle = loona.subunit.OddEyeCircle()
+
+onethird = loona.subunit.OneThird()
+oddeyecircle = loona.subunit.OddEyeCircle()
 yyxy = loona.subunit.yyxy()
 
-def get_subunits():
-    return ['LOONA 1/3, LOONA ODD EYE CIRCLE, LOONA yyxy']
 
-group = loona.group.LOONA()
+def get_subunits():
+    return [onethird, oddeyecircle, yyxy]
+
+
+fullgroup = loona.group.LOONA()
 
 
 if __name__ == "__main__":

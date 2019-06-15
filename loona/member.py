@@ -27,7 +27,7 @@ class Member:
     def age(self):
         return math.floor((datetime.date.today() - self.birthday).days/365.2425)
 
-    def DaysSinceDebut(self):
+    def days_since_debut(self):
         return (datetime.date.today() - self.debut).days
 
 
