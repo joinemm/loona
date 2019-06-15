@@ -29,6 +29,9 @@ class Member:
     def age(self):
         return int((datetime.date.today() - self.birthday).days/365.2425)
 
+    def age_kr(self):
+        return datetime.date.today().year - self.birthday.year + 1
+
     def days_since_debut(self):
         return (datetime.date.today() - self.debut).days
 
