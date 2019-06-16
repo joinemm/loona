@@ -1,3 +1,9 @@
+"""Loona (stylized as LOOΠΔ) is a South Korean girl group
+formed by Blockberry Creative. Its twelve members were
+revealed in a periodic fashion, corresponding to their
+Korean name Idarui Sonyeo (이달의 소녀), which translates
+to "Girl of the Month"."""
+
 import loona.member
 import loona.subunit
 
