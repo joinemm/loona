@@ -12,7 +12,7 @@ class SubUnit:
         self.members = kwargs.get('members', [])
         self.releases = kwargs.get('releases', [])
         self.concerts = kwargs.get('concerts', [])
-        self.locations = kwargs.get('locations', [])
+        self.location = kwargs.get('location', [])
 
     def __str__(self):
         return self.name
