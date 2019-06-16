@@ -133,7 +133,7 @@ class Vivi(Member):
                         location="Busan, South Korea",
                         debut=datetime.date(2017, 2, 13)
                         )
-        self.birthname_ch = "黃珈熙"
+        self.birthname_zh = "黃珈熙"
 
 
 class KimLip(Member):
@@ -151,6 +151,7 @@ class KimLip(Member):
                         song="Eclipse",
                         song_url="https://www.youtube.com/watch?v=_qJEoSa3Ie0",
                         subunit="Odd Eye Circle",
+                        location='Gimcheon, South Korea',
                         debut=datetime.date(2017, 5, 15)
                         )
 
@@ -190,6 +191,7 @@ class Choerry(Member):
                         song="Love Cherry Motion",
                         song_url="https://www.youtube.com/watch?v=VBbeuXW8Nko",
                         subunit="Odd Eye Circle",
+                        location='Jeju Island, South Korea',
                         debut=datetime.date(2017, 7, 12)
                         )
 
@@ -210,6 +212,7 @@ class Yves(Member):
                         song="new",
                         song_url="https://www.youtube.com/watch?v=LIDe-yTxda0",
                         subunit="YYXY",
+                        location='Seoul, South Korea',
                         debut=datetime.date(2017, 11, 14)
                         )
 
@@ -270,6 +273,7 @@ class Olivia(Member):
                         song="Egoist",
                         song_url="https://www.youtube.com/watch?v=UkY8HvgvBJ8",
                         subunit="YYXY",
+                        location='Bucheon, South Korea',
                         debut=datetime.date(2018, 3, 17)
                         )
 
