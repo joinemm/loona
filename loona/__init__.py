@@ -1,5 +1,6 @@
 import loona.member
 import loona.subunit
+import loona.release
 
 heejin = loona.member.Heejin()
 hyunjin = loona.member.Hyunjin()
@@ -56,6 +57,14 @@ yyxy.add_member(olivia)
 
 def get_subunits():
     return [onethird, oddeyecircle, yyxy]
+
+
+plusplus = loona.release.PlusPlus()
+multiplemultiple = loona.release.MultipleMultiple()
+
+
+def get_albums():
+    return [plusplus, multiplemultiple]
 
 
 if __name__ == "__main__":
