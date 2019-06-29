@@ -70,7 +70,8 @@ multiplemultiple = loona.release.MultipleMultiple()
 
 
 def get_albums():
-    return [plusplus, multiplemultiple]
+    releases = [plusplus, multiplemultiple]
+    return releases
 
 
 if __name__ == "__main__":
