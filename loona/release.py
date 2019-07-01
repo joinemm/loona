@@ -9,7 +9,7 @@ class Song:
         self.lyrics = kwargs.get('lyrics')
         self.url = kwargs.get('url')
 
-    def __str__(self):
+    def __repr__(self):
         return self.name
 
 
@@ -20,8 +20,8 @@ class Album:
         self.release_date = kwargs.get('release_date')
         self.songs = kwargs.get('songs', [])
 
-    def __str__(self):
-        return self.name + "\n" + self.tracklist()
+    def __repr__(self):
+        return self.name + "\n" + self.tracklist() + "\n"
 
     def tracklist(self):
         return "\n".join(f"{i}. {song} - {song.duration}" for i, song in enumerate(self.songs, start=1))

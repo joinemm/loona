@@ -14,7 +14,7 @@ class SubUnit:
         self.concerts = kwargs.get('concerts', [])
         self.location = kwargs.get('location', [])
 
-    def __str__(self):
+    def __repr__(self):
         return self.name
 
     def add_member(self, member: Member):

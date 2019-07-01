@@ -20,7 +20,7 @@ class Member:
         self.location = kwargs.get('location')
         self.debut = kwargs.get('debut')
 
-    def __str__(self):
+    def __repr__(self):
         return self.name
 
     def stream(self):
